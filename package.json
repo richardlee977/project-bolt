@@ -1,6 +1,6 @@
 {
   "name": "restaurant-companion",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://richardlee977.github.io/project-bolt",
