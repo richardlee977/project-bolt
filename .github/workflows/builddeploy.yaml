@@ -31,7 +31,7 @@ jobs:
       id-token: write
     environment:
       name: github-pages
-      url: 'https://${{ richardlee977 }}.github.io/${{ project-bolt }}/'
+      url: 'https://$richardlee977.github.io/project-bolt /'
     steps:
       - name: Setup Pages
         uses: actions/configure-pages@v5
