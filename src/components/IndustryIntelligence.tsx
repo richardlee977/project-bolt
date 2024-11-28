@@ -123,14 +123,15 @@ export default function IndustryIntelligence() {
               AI-curated insights and content ideas for your business
             </CardDescription>
           </div>
-          <div className="flex gap-2">
+        </div>
+          <div className="flex gap-1">
             <Button 
               variant="outline" 
               size="sm"
               onClick={() => setSelectedCategory(null)}
               className={!selectedCategory ? 'bg-primary/10' : ''}
             >
-              <Filter className="h-4 w-4 mr-2" />
+              <Filter className="h-2 w-2 mr-2" />
               All
             </Button>
             {['trend', 'opportunity', 'insight'].map(category => (
@@ -146,9 +147,7 @@ export default function IndustryIntelligence() {
               </Button>
             ))}
           </div>
-        </div>
-      </CardHeader>
-
+      </CardHeader> 
       <CardContent className="space-y-4">
         {filteredItems.map((item) => (
           <Card 
@@ -243,9 +242,9 @@ export default function IndustryIntelligence() {
           </Card>
         ))}
 
-        <Button className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700">
+        {/* <Button className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700">
           View All Insights
-        </Button>
+        </Button> */}
       </CardContent>
     </Card>
   );
