@@ -95,7 +95,7 @@ export default function AIAgentsDashboard() {
         tone: 'Friendly',
         languages: ['English', 'French']
       }
-    }
+    }, 
   ]);
 
   const [selectedPlatform, setSelectedPlatform] = useState<string | null>(null);

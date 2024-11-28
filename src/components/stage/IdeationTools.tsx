@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { 
   Search, BarChart3,
   Compass, Brain, Palette, Calculator,
-  ScrollText, Coins} from 'lucide-react';
+  ScrollText, Coins, Target} from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { useToast } from '@/components/ui/use-toast';
 import { useTaskContext } from '@/context/TaskContext';
@@ -14,7 +14,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-// import CustomerPersonaBuilder from '../tools/CustomerPersonaBuilder';
+import CustomerPersonaBuilder from '../tools/CustomerPersonaBuilder';
 import MarketGapAnalyzer from '../tools/MarketGapAnalyzer';
 import DemandForecaster from '../tools/DemandForecaster';
 import RestaurantConceptBuilder from '../tools/RestaurantConceptBuilder';
@@ -67,17 +67,17 @@ export default function IdeationTools() {
           task: "Generate demand forecast report",
           component: DemandForecaster
         },
-        // {
-        //   id: "customer-persona",
-        //   icon: Target,
-        //   title: "Customer Persona Builder",
-        //   description: "Create detailed customer profiles",
-        //   tags: ["Demographics", "Preferences", "Behavior"],
-        //   color: "bg-purple-50 hover:bg-purple-100",
-        //   iconColor: "text-purple-600",
-        //   task: "Define target customer personas",
-        //   component: CustomerPersonaBuilder
-        // }
+        {
+          id: "customer-persona",
+          icon: Target,
+          title: "Customer Persona Builder",
+          description: "Create detailed customer profiles",
+          tags: ["Demographics", "Preferences", "Behavior"],
+          color: "bg-purple-50 hover:bg-purple-100",
+          iconColor: "text-purple-600",
+          task: "Define target customer personas",
+          component: CustomerPersonaBuilder
+        }
       ]
     },
     {
