@@ -199,7 +199,7 @@ export default function AIAgentsDashboard() {
             </div>
             <div className="mt-4 flex items-center text-sm text-emerald-500">
               <TrendingUp className="h-4 w-4 mr-1" />
-              <span>+12.5% from last week</span>
+              <span>+12.5% from last week hiihihi</span>
             </div>
           </CardContent>
         </Card>

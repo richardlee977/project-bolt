@@ -9,7 +9,7 @@ import { ThemeToggle } from './ThemeToggle';
 
 export default function Navbar() {
   const navItems = [
-    { label: 'Business Tools', href: '#tools' },
+    { label: 'Business Tools', href: 'business/' },
     { label: 'Calculators', href: '#calculator' },
     { label: 'Guides', href: '#guides' },
     { label: 'Marketing', href: '#marketing' },
@@ -20,10 +20,10 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center space-x-2">
+          <a href='../' className="flex items-center space-x-2">
             <Command className="h-6 w-6 text-primary" />
             <span className="font-bold text-xl">Restaurant OS</span>
-          </div>
+          </a>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-1">

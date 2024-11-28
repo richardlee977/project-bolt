@@ -8,7 +8,7 @@ import { useAppStore } from '@/store/useAppStore';
 export default function DailyInsights() {
   const { isDarkMode } = useAppStore();
   const today = format(new Date(), 'EEEE, MMMM d');
-  const completionRate = 75;
+  const completionRate = 0;
 
   return (
     <div className="space-y-6">
